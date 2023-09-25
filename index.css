@@ -1,0 +1,155 @@
+html{
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+*,*:before,*:after{
+	box-sizing: inherit;
+}
+
+body{
+	margin: 0%;
+	padding: 0%;
+}
+
+.iphone15 {
+	position: fixed;
+	width: 100%;
+	background-image: url(iphone-15.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 50px;
+	height: 100vh;
+}
+.iphone15 h2{
+	display: inline-block;
+	position: relative;
+	margin-top: 5%;
+	margin-left: 35%;
+	font-size: 56px;
+	line-height: 1.07143;
+	letter-spacing: -0.005em;
+	font-weight: 600;
+	color: white;
+	font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.iphone15 h3{
+	display: inline-block;
+	position: relative;
+	margin-top: 6px;
+	margin-left: 35%;
+	font-size: 28px;
+	line-height: 1.10722;
+	font-family: 400;
+	letter-spacing: 0.004em;
+	color: white;
+	font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.iphone15 p{
+	font-size: 21px;
+	line-height: 1.19048;
+	font-weight: 400;
+	letter-spacing: 0.011em;
+	font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+	color: #6e6e73;
+	margin-top: 15px;
+	margin-left: 40%
+}
+.logo{
+	width: 15px;
+	height: 15px;
+	margin-top: 12px;
+	margin-right: 50px;
+}
+nav ul{
+	display: flex;
+	position: absolute;
+	top: 0%;
+	right: 15%;
+	left: -12%;
+	z-index: 9999;
+	margin: 15px;
+	margin-left: 150px;
+	margin-top: 2px;
+	width: 100%;
+	min-width: 520px;
+	height: 48px;
+	max-height: 44px;
+	font-size: 17px;
+	list-style: none;
+	background-color: whitesmoke;
+}
+li{
+	padding: 20px;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: -.01em;
+	font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+	line-height: 1;
+	align-items: center;
+	justify-content: center;
+}
+a{
+	color: rgba(0,0,0,0.8);
+	text-decoration: none;
+	transition: text-decoration 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.navbar .sub-menu1{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 90%;
+	min-height: 450px;
+	min-width: 76.78rem;
+	border-radius: 7px;
+	transform: translateY(0);
+}
+.navbar .sub-menu1 a{
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: bolder;
+	font-size: x-large;
+}
+.navbar li{
+	position: relative;
+}
+
+.navbar li:hover .sub-menu1 {
+	display: block;
+    position: absolute;
+    top: 80%; 
+    left: -200px;
+	animation: dropFade 1.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.learn_buy{
+	display: block;
+	position: absolute;
+	right: 50%;
+	color: #2997ff;
+	font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+	font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.buy{
+	display: block;
+	position: absolute;
+	right: 40%;
+	color: #2997ff;
+	font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+	font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+@keyframes dropFade{
+	0%{
+		opacity: 0;
+		transform: translateY(-450px);
+	}100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
